@@ -17,10 +17,11 @@ module.exports = {
       colors: {
         'paleWhite': '#E5E5E5',
         'navGrey':'#606060',
-        'heroArrow':'#292929',
-        'heroText':'#393939',
+        'heroArrow':'#4d4d4d',
+        'heroText':'#7a7a7a',
         'heroOrange':'#FFB84E',
-        'heroPurple':'#B044F2'
+        'heroPurple':'#B044F2',
+        'paleBlack':'#292929'
       }
     },
   },

@@ -97,7 +97,7 @@ const Projects = () => {
                     </h2>
                   </div>
                 </div>
-                <div className="">
+                <div className="p-3 mt-4">
                   <img
                     className="rounded-sm md:ml-5"
                     src="https://user-images.githubusercontent.com/63285005/164077877-e8c18b1a-83e5-4056-9cb9-803992653603.png"
@@ -158,9 +158,9 @@ const Projects = () => {
                   </p>
                   
                 </div>
-                <div className="">
+                <div className="p-3 mt-4">
                   <img
-                    className="rounded-sm md:ml-5"
+                    className="rounded-sm md:ml-5 "
                     src="https://user-images.githubusercontent.com/63285005/167256497-52e2285c-a8ce-43dc-aa27-d115a552ac51.jpg"
                   />
                 </div>

@@ -1,84 +1,135 @@
 import React from "react";
-//import { educationData } from "../assets/timeLineData"
-
-const educationData = [
-  {
-    id: 1,
-    course: "BTech. Computer Science Engineering",
-    instituteName: "Lovely Professional University",
-    start: "July 2020",
-    end: "July 2023",
-  },
-  {
-    id: 2,
-    course: "Diploma Computer Science & Technology",
-    instituteName: "Kinston Educational Institute",
-    start: "July 2017",
-    end: "July 2020",
-  },
-];
-
-const Timeline = () => {
+import lpulogo from "../assets/lpu_logo.png";
+import keilogo from "../assets/kei_logo.png";
+import hrclogo from "../assets/hrc_logo.png";
+import brlogo from "../assets//br_logo.png";
+const Timeline2 = () => {
   return (
     <>
-      <div className="flex lg:text-[5rem] md:text-[2rem] text-[2rem]">
-        <p className="text-heroArrow ">&lt;</p>
-        <p className="text-paleWhite ">Education</p>
-        <p className="text-heroArrow">/&gt;</p>
-      </div>
-      <div className="h-screen flex justify-center space-x-3">
-        <div className="space-y-5">
-          {educationData.map((items) => (
-            <div key={items.id} className="h-24 md:h-28 flex items-center">
-              <div className="h-5 w-5 rounded-full border-2 border-white"></div>
-            </div>
-          ))}
+      <div className="lg:p-12 p-1 -mt-72 md:-mt-10">
+        <div className="flex lg:text-[5rem] md:text-[2rem] text-[2rem]">
+          <p className="text-heroArrow ">&lt;</p>
+          <p className="text-paleWhite ">Timeline</p>
+          <p className="text-heroArrow">/&gt;</p>
         </div>
+        <div className="p-5 md:px-28 ">
+          <ol className="relative border-l border-gray-200 dark:border-gray-700 md:text-left">
+            {/* Broadridge */}
+            {/* <li className="mb-10 ml-4 rounded-md">
+              <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+              <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+                Jun 2022 - Jun 2023
+              </time>
+              <h3 className="text-lg md:text-xl font-bold text-paleWhite dark:text-white">
+                SDE Intern
+              </h3>
+              <h2 className="text-sm md:text-lg font-semibold  dark:text-white flex justify-center py-1">
+                <img src={brlogo} className="h-5 md:h-8 mr-1" />
+                <p className="md:h-8 flex items-center">
+                  <p className="text-sky-700">Broadridge</p>
+                </p>
+              </h2>
+              <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+                Get access to over 20+ pages including a dashboard layout,
+                charts, kanban board, calendar, and pre-order E-commerce &
+                Marketing pages.
+              </p>
+            </li> */}
 
-        {/* Education info */}
-        <div className="space-y-5">
-          {educationData.map((info) => (
-            <div
-              key={info.id}
-              className="container flex w-full md:w-[30rem] h-24 md:h-28 bg-white rounded-md p-3 md:p-5"
-            >
-              <div className="w-max flex items-start md:items-center justify-center pl-1 md:p-1">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6  md:h-16 md:w-16"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  strokeWidth={1}
-                >
-                  <path d="M12 14l9-5-9-5-9 5 9 5z" />
-                  <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
-                  />
-                </svg>
-              </div>
-              <div className="">
-                <div className="flex">
-                  <div className="font-bold md:text-lg">{info.course}</div>
-                </div>
-                <div>
-                  <div className="font-medium text-left">
-                    {info.instituteName}
-                  </div>
-                  <div className="flex font-light text-sm">
-                    <div>{info.start}</div>-<div>{info.end}</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          ))}
+            {/* HighRadius */}
+            <li className="mb-10 ml-4 rounded-md ">
+              <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+              <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+                Jan 2022 - Apr 2022
+              </time>
+              <h3 className="text-lg md:text-xl font-bold text-paleWhite dark:text-white">
+                SDE Intern
+              </h3>
+              <h2 className="text-sm md:text-lg font-semibold  dark:text-white flex justify-center md:justify-start py-1">
+                <img src={hrclogo} className="h-6 md:h-9 mr-1" />
+                <p className="md:h-9 flex items-center">
+                  <p className="text-orange-400">High</p>
+                  <p className="text-lime-500">rad</p>
+                  <p className="text-sky-300">ius</p>
+                </p>
+              </h2>
+              <p className="mb-4 text-base  font-normal text-gray-500 dark:text-gray-400">
+                <ol>
+                  <li>
+                    • Developed a Full Stack Application where UI was based on
+                    ReactJs coupled with Material-UI and the backend was built
+                    using JAVA and MySQL database.
+                  </li>
+                  <li>
+                    • The Application enables analysts to keep track of payments
+                    in a B2B world. The application uses ML model created using
+                    Python to predict payment date of the customers.
+                  </li>
+                </ol>
+              </p>
+            </li>
+
+            {/* Lovely Professional University */}
+            <li className="mb-10 ml-4 rounded-md">
+              <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+              <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+                Jul 2020 - Jul 2023
+              </time>
+              <h3 className="text-lg md:text-xl font-bold text-paleWhite dark:text-white">
+                BTech. Computer Science Engineering
+              </h3>
+              <h2 className="text-sm md:text-lg font-semibold text-orange-400 dark:text-white flex justify-center md:justify-start py-1">
+                <img src={lpulogo} className="h-5 md:h-8 mr-1" />
+                <p className="md:h-8 flex items-center">
+                  Lovely Professional University
+                </p>
+              </h2>
+              <p className="mb-4 text-base  font-normal text-gray-500 dark:text-gray-400">
+                <ol>
+                  <li>
+                    • GPA : 8.77
+                  </li>
+                  <li>
+                    • Top 10%(Dean's List) in the batch of 2023.
+                  </li>
+                </ol>
+              </p>
+            </li>
+
+            {/* Kingston educational Institute */}
+            <li className="mb-10 ml-4">
+              <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+              <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+                Jul 2017 - Jul 2020
+              </time>
+              <h3 className="text-lg md:text-xl font-bold text-paleWhite dark:text-white">
+                Diploma Computer Science & Technology
+              </h3>
+              <h2 className="text-sm md:text-lg font-semibold text-yellow-500 dark:text-white flex justify-center md:justify-start py-1">
+                <img src={keilogo} className="h-6 md:h-9 mr-1" />
+                <p className="md:h-9 flex items-center">
+                  Kingston Educational Institute
+                </p>
+              </h2>
+              <p className="mb-4 text-base  font-normal text-gray-500 dark:text-gray-400">
+                <ol>
+                <li>
+                    • GPA : 8.7
+                  </li>
+                  <li>
+                    • Rank #1 out of 60.
+                  </li>
+                  <li>
+                    • Selected as one of the First member for the placement cell by the Dean.
+                  </li>
+                </ol>
+              </p>
+            </li>
+          </ol>
         </div>
       </div>
     </>
   );
 };
 
-export default Timeline;
+export default Timeline2;

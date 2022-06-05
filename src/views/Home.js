@@ -1,12 +1,14 @@
 import React from "react";
 import Hero from "../components/Hero";
 import Projects from "../components/Projects";
-import Timeline2 from "../components/Timeline2";
+import Timeline2 from "../components/Timeline";
 
 const Home = () => {
   return (
     <>
-         <Hero />
+      <div className="">
+        <Hero />
+      </div>
       <div className="">
         {/* <Timeline /> */}
         <Timeline2 />
