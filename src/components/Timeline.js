@@ -30,8 +30,8 @@ const Timeline2 = () => {
                   <p className="text-sky-700">Broadridge</p>
                 </p>
               </h2>
-              <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400 flex items-center">
-                • Onboarding <img src={boat} className="h-9 ml-1 " />
+              <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400 flex justify-center md:justify-start items-center ">
+                • Onboarding <img src={boat} className=" h-7 md:h-9 ml-1 mb-1 " />
               </p>
             </li>
 
