@@ -3,6 +3,7 @@ import lpulogo from "../assets/lpu_logo.png";
 import keilogo from "../assets/kei_logo.png";
 import hrclogo from "../assets/hrc_logo.png";
 import brlogo from "../assets//br_logo.png";
+import boat from "../assets/boat.gif"
 const Timeline2 = () => {
   return (
     <>
@@ -15,26 +16,24 @@ const Timeline2 = () => {
         <div className="p-5 md:px-28 ">
           <ol className="relative border-l border-gray-200 dark:border-gray-700 md:text-left">
             {/* Broadridge */}
-            {/* <li className="mb-10 ml-4 rounded-md">
+            <li className="mb-10 ml-4 rounded-md">
               <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
               <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
-                Jun 2022 - Jun 2023
+                Jun 2022 - Present
               </time>
               <h3 className="text-lg md:text-xl font-bold text-paleWhite dark:text-white">
-                SDE Intern
+                Intern
               </h3>
-              <h2 className="text-sm md:text-lg font-semibold  dark:text-white flex justify-center py-1">
+              <h2 className="text-sm md:text-lg font-semibold  dark:text-white flex justify-center md:justify-start py-1">
                 <img src={brlogo} className="h-5 md:h-8 mr-1" />
                 <p className="md:h-8 flex items-center">
                   <p className="text-sky-700">Broadridge</p>
                 </p>
               </h2>
-              <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
-                Get access to over 20+ pages including a dashboard layout,
-                charts, kanban board, calendar, and pre-order E-commerce &
-                Marketing pages.
+              <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400 flex items-center">
+                • Onboarding <img src={boat} className="h-9 ml-1 " />
               </p>
-            </li> */}
+            </li>
 
             {/* HighRadius */}
             <li className="mb-10 ml-4 rounded-md ">
@@ -86,12 +85,8 @@ const Timeline2 = () => {
               </h2>
               <p className="mb-4 text-base  font-normal text-gray-500 dark:text-gray-400">
                 <ol>
-                  <li>
-                    • GPA : 8.77
-                  </li>
-                  <li>
-                    • Top 10%(Dean's List) in the batch of 2023.
-                  </li>
+                  <li>• GPA : 8.83</li>
+                  <li>• Top 10%(Dean's List) in the batch of 2023.</li>
                 </ol>
               </p>
             </li>
@@ -113,14 +108,11 @@ const Timeline2 = () => {
               </h2>
               <p className="mb-4 text-base  font-normal text-gray-500 dark:text-gray-400">
                 <ol>
-                <li>
-                    • GPA : 8.7
-                  </li>
+                  <li>• GPA : 8.7</li>
+                  <li>• Rank #1 out of 60.</li>
                   <li>
-                    • Rank #1 out of 60.
-                  </li>
-                  <li>
-                    • Selected as one of the First member for the placement cell by the Dean.
+                    • Selected as one of the First member for the placement cell
+                    by the Dean.
                   </li>
                 </ol>
               </p>
