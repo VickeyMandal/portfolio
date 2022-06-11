@@ -10,6 +10,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./views/Home";
 import Contact from "./views/Contact";
 import Contact2 from "./views/Contact";
+import About from "./views/About";
 
 ReactGA.initialize("G-0F5RBD5QG0");
 ReactGA.pageview(window.location.pathname + window.location.search);
@@ -20,7 +21,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />}/>
-          {/* <Route path="/contact" element={<Contact />}/> */}
+          <Route path="/about" element={<About />}/>
           <Route path="/contact" element={<Contact2 />}/>
         </Routes>
         <Footer />

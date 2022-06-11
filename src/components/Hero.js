@@ -39,7 +39,7 @@ const Hero = () => {
 
           {/* Image Section */}
           <div className=" md:ml-40 md:justify-end md:mr-2 flex justify-center items-center">
-              <img className="h-36 md:h-52 rounded-full" src={pro} />
+              <img className="h-36 md:h-52 rounded-full " src={pro} />
           </div>
         </div>
       </div>
